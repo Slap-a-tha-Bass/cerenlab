@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+.background-img {
+  background-image: url('/src/photos/microbiome.jpg');
+  background-position: center;
+  background-attachment: relative;
+  background-size: cover;
+  background-repeat: none;
+  filter: brightness(70%);
+  height: 16rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-button {
+  border: 1px solid rgb(30,32,30);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: rgb(31, 255, 160);
+  font-size: 3.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-1 {
+  position: absolute;
+  font-size: 3.6rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-2 {
+  position: relative;
+  margin-left: 0.2rem;
+}
+.nav-button {
+  border: 1px solid rgb(30,32,30);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+.nav-button:hover {
+  color: rgb(31, 255, 160);
+}
+.join-button {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-self: center;
+  border: 1px solid rgb(31, 255, 160);
+  border-radius: 3rem;
+  padding: 0.6rem;
+  margin: 1rem;
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: rgb(31, 255, 160);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: none;
+}
+.join-button:hover {
+  color: black;
+  font-weight: bold;
+}
+.header-text {
+  color: whitesmoke;
+  font-size: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* ANIMATION SCHEMES */
+.transition {
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 4s; /* Firefox < 16 */
+      -ms-animation: fadein 4s; /* Internet Explorer */
+       -o-animation: fadein 4s; /* Opera < 12.1 */
+          animation: fadein 4s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* COLOR SCHEMES */
+.bg-color {
+  background-color: rgb(30,32,30);
+}
+.card-header-info {
+  background-color: rgb(60,64,60)!important;
+  color: whitesmoke;
 }
