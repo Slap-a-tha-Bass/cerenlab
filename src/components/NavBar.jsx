@@ -11,9 +11,11 @@ const NavBar = () => {
                     <div className="logo-2">YF</div>
                 </div>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle className="border-dark mx-5" aria-controls="basic-navbar-nav">
+                <div className="margin-neg toggle-button d-flex align-items-center justify-content-center text-center"><i className="bi bi-list h1 mt-2"></i></div>
+            </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav>
+                <Nav className="bg-dark">
                     <Link
                         className="nav-button border-dark nav-spacing"
                         to="/mission">who we are</Link>

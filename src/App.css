@@ -50,6 +50,23 @@
   margin-left: 3rem;
   margin-right: 3rem;
 }
+.toggle-button {
+  border: 1px solid black;
+  outline: black;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  padding: none;
+  margin: none;
+  color: rgb(31, 255, 160);
+  background-color: black;
+}
+.margin-neg {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
 .join-button {
   width: 5rem;
   border: 1px solid rgb(31, 255, 160);
@@ -112,6 +129,12 @@
 /* COLOR SCHEMES */
 .bg-color {
   background-color: rgb(30,32,30);
+}
+.transparent {
+  opacity: 20%;
+}
+.text-font {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .card-header-info {
   background-color: rgb(60,64,60)!important;
