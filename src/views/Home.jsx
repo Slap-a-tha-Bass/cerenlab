@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import CardLayout from '../components/CardLayout';
 import RootLayout from '../components/RootLayout';
 
@@ -19,7 +19,7 @@ const Home = () => {
                 </Col>
                 <Col md={6}>
                     <Card className="bg-dark border-dark rounded m-2 p-2 transition">
-                        <Card.Img className="background-img">
+                        <Card.Img className="gif">
 
                         </Card.Img>
                     </Card>
@@ -141,7 +141,7 @@ const Home = () => {
                 </Row>
             </RootLayout>
             <Container>
-                <Row className="my-5 d-flex align-items-center justify-content-center">
+                <Row className="my-5 d-flex align-items-center justify-content-center my-4">
                     <h1 className="display-1">Resources</h1>
                     <Col md={6}>
                         <Card className="bg-dark border-dark text-light rounded shadow m-2 p-2 transition">
